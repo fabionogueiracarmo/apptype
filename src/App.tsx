@@ -5,7 +5,7 @@ import Title from './components/Title';
 function App() {
   return (
     <div className="App">
-        <Title title={"Olá Mundo"}/>
+        <Title color="red" title="Olá Mundo"/>
     </div>
   );
 }
