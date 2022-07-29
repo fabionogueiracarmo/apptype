@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Title from './components/Title';
+import Title from './shared/components/Title';
 
 function App() {
   return (
