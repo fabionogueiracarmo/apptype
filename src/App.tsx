@@ -1,16 +1,15 @@
-import React from 'react';
+import React from "react";
+import { BrowserRouter } from "react-router-dom";
 
-import Title from './shared/components/Title';
-import AppRoutes from './routes'
-
-import {BrowserRouter} from "react-router-dom";
+import AppRoutes from "./routes";
+import Title from "./shared/components/Title";
 
 function App() {
   return (
     <div className="App">
-        <BrowserRouter>
-          <AppRoutes />
-        </BrowserRouter>
+      <BrowserRouter>
+        <AppRoutes />
+      </BrowserRouter>
     </div>
   );
 }
