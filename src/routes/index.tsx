@@ -1,6 +1,6 @@
-import { Routes, Route, useParams } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 
-export const appRoutes = () => {
+ const appRoutes = () => {
     return(
         <Routes>
             <Route path="/pagina-inicial" element={<p>Pagina Inicial</p>}></Route>
@@ -8,3 +8,5 @@ export const appRoutes = () => {
         </Routes>
     )
 }
+
+export default appRoutes;
