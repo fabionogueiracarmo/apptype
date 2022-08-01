@@ -1,1 +1,2 @@
-export default "./Light";
+export * from "./Light";
+export * from "./Dark";
