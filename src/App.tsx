@@ -4,13 +4,12 @@ import { BrowserRouter } from "react-router-dom";
 
 import AppRoutes from "./routes";
 import Title from "./shared/components/Title";
-import Theme from "./shared/themes";
-import { LightTheme } from "./shared/themes/Light";
+import { LightTheme, DarkTheme } from "./shared/themes";
 
 function App() {
   return (
     <div className="App">
-      <ThemeProvider theme={LightTheme}>
+      <ThemeProvider theme={DarkTheme}>
         <BrowserRouter>
           <AppRoutes />
         </BrowserRouter>
