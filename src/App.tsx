@@ -3,16 +3,17 @@ import React from "react";
 import { BrowserRouter } from "react-router-dom";
 
 import AppRoutes from "./routes";
+import { AppThemeProvider } from "./shared/contexts";
 import { DarkTheme } from "./shared/themes";
 
 function App() {
   return (
     <div className="App">
-      <ThemeProvider theme={DarkTheme}>
+      <AppThemeProvider>
         <BrowserRouter>
           <AppRoutes />
         </BrowserRouter>
-      </ThemeProvider>
+      </AppThemeProvider>
     </div>
   );
 }

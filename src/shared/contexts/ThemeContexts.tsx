@@ -6,6 +6,7 @@ import {
   createContext,
   ReactNode,
   useCallback,
+  useContext,
   useMemo,
   useState,
 } from "react";
@@ -22,6 +23,10 @@ interface IProps {
 }
 
 const ThemeContext = createContext({} as IThemeContextsData);
+
+export const useAppThemeContext = () => {
+  return useContext(ThemeContext);
+};
 
 // eslint-disable-next-line react/prop-types
 export const AppThemeProvider: React.FC<IProps> = ({ children }) => {
